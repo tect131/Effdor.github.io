@@ -1,0 +1,1217 @@
+/* Убираем горизонтальную прокрутку */
+body {
+    margin: 0;
+    overflow-x: hidden; /* Запрещаем горизонтальную прокрутку */
+}
+#navbarNav {
+    margin-left: 0%;
+    font-size: 17px;
+}
+a {
+    text-decoration: none;
+}
+.navbar-toggler {
+    border-color: #ffffff; /* Цвет рамки кнопки */
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-nav .nav-link.active {
+    color: rgb(137, 43, 226);
+}
+.navbar .nav-link:hover {
+    color: rgb(178, 110, 242);
+}
+
+.navbar .nav-link {
+    transition: color 0.3s ease; 
+}
+.social-icons {
+    position: absolute;
+    left: 80%;
+    display: flex; /* Используем Flexbox для выравнивания */
+    transition: all 0.3s ease; /* Плавная анимация при изменении */
+}
+.logo {
+    width: 150px;
+    height: 150px;
+}
+.navbar-nav .nav-link:visited i {
+    color: #fff; /* Оставляем тот же цвет для посещенных ссылок */
+  }
+#img {
+    margin-left: 7%;
+}
+.navbar {
+    background-color: rgb(20, 18, 21);
+    z-index: 10000;
+}
+.nav-link {
+    color: rgb(225, 225, 225);
+}
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fon {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    left: 0;
+    z-index: 100;
+}
+.video-container {
+    position: relative; 
+    padding-top: 56.25%; /* Соотношение сторон 16:9 (9 / 16 = 0.5625) */
+    overflow: hidden; /* Обрезает лишнее */
+    width: 1980%; /* Фиксированная ширина */
+    height: 1080px;
+    top: 50%; /* Центрируем видео вертикально */
+    left: 50%; /* Центрируем видео горизонтально */
+    transform: translate(-50%, -50%); /* Центрируем по середине контейнера */
+    pointer-events: none; /* Отключаем взаимодействие с видео (по желанию) */
+    margin: 0 auto; /* Центрируем видео по горизонтали */
+}
+.video-container iframe {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color: beige;
+}
+.donat {
+    position: absolute;
+    top: 500%;
+    left: auto;
+    width: 200px;
+    height:45px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #d736d7;
+    box-shadow: 0px 0px 10px 0px rgba(255, 72, 245, 0.75);
+    cursor: pointer;
+    border: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000000;
+}
+.donat:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #f700ffc8, 
+              0 0 40px #dd00ffb3,
+              0 0 50px #ff00ffd0;
+}
+.Zr6 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 0px 0px 20px;
+
+} 
+#logo_x {
+    border-radius: 10%;
+}
+.logo {
+    border-radius: 15%;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+    background-attachment: fixed;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+.spark {
+    position: absolute;
+    width: 8px; /* Уменьшаем размер искр */
+    height: 8px; /* Уменьшаем размер искр */
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.8), transparent); /* Яркий цвет */
+    border-radius: 50%;
+    opacity: 1;
+    animation: spark-animation var(--duration) forwards; /* Используем переменную для продолжительности */
+}
+
+@keyframes spark-animation {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    50% {
+        opacity: 0.7; /* Чуть прозрачные в середине анимации */
+        transform: translate(var(--random-x), var(--random-y));
+    }
+    100% {
+        opacity: 0; /* Искры исчезают в конце */
+        transform: translate(var(--random-x), var(--random-y));
+    }
+}
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(37, 8, 46, 0.263); /* Цвет и прозрачность сетки */
+    pointer-events: none; /* Блокируем взаимодействие с сеткой */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    z-index: 1; /* Убедитесь, что сетка поверх фона */
+}
+.vold {
+    background-color: black;
+    height: 100px;
+    position: absolute;
+    top: 130%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ulogo {
+    width: 50%;
+    height: auto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 26%;
+    z-index: 1000;
+}
+.h1 , h1 {
+    font-size: 60px;
+    text-shadow:
+    0 0 7px #ffffff00,
+    0 0 10px #ffffff86,
+    0 0 21px #ffffffb0,
+    0 0 42px rgb(255, 0, 251),
+    0 0 82px rgb(242, 0, 255),
+    0 0 92px rgb(230, 0, 255),
+    0 0 102px rgb(238, 0, 255),
+    0 0 151px rgb(217, 0, 255);
+}
+.ulogo , p {
+    font-size: 18px;
+    font-style: normal;
+}
+
+.foncss {
+    position: relative;
+    top: 590px;
+    width:100% ;
+    height: 3050px;
+    background-color: rgb(20, 18, 21);
+    overflow-x: hidden;
+    z-index: 900;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    top: 85%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(Img/fon3.png);
+    background-size: 1000px 100px;
+}
+
+.wave.w1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.wave.w2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.wave.w3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+.wave.w4{
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: -1000px;
+    }
+}
+
+.Zr1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 643;
+    padding: 10px 0px;
+}
+.z1 {
+    color: #d7d7d7; 
+    font-size: 24px;
+    font-weight: 420;
+}
+.uinfo1 {
+    width: 500px;
+    position: absolute;
+    left: 850px;
+    top: 4%;
+}
+
+.foto1 {
+    border-radius: 10%;
+}
+.info1 {
+    position: absolute;
+    top: 3%;
+    margin-left: 150px;
+    width: 600px;
+    height: 300px;
+    display: block;
+}
+.info2 {
+    position: absolute;
+    top: 15%;
+    left: 750px;
+    width: 640px;
+    height: 300px;
+    display: block;
+}
+.uinfo2 {
+    width: 500px;
+    position: absolute;
+    top: 16%;
+    left: 9%;
+}
+.info3 {
+    position: absolute;
+    top: 28%;
+    margin-left: 150px;
+    width: 650px;
+    height: 300px;
+    display: block;
+}
+.uinfo3 {
+    width: 500px;
+    position: absolute;
+    top: 28%;
+    left: 850px;
+}
+.info4 {
+    position: absolute;
+    top:39%;
+    left: 750px;
+    width: 640px;
+    height: 300px;
+    display: block;
+}
+.uinfo4 {
+    width: 500px;
+    position: absolute;
+    top: 39%;
+    left: 9%;
+}
+.info5i {
+    position: absolute;
+    top:50%;
+    margin-left: 150px;
+    width: 640px;
+    height: 300px;
+    display: block;
+}
+.uinfo5i {
+    width: 550px;
+    position: absolute;
+    top: 52%;
+    left: 850px;
+}
+.info5 {
+    position: absolute;
+    top: 64%;
+    left: 30%;
+    width: 800px;
+    height: 300px;
+    display: block;
+}
+.Zr2 {
+    color: #e6e6e6;
+    font-size: 50px;
+    font-weight: 643;
+    padding: 30px 0px;
+}
+.vopros {
+    cursor: pointer;
+    background-color: #383437;
+    position: relative;
+    top: 69%;
+    left: 25%;
+    width: 800px;
+    height: 70px;
+    border-radius: 22px;
+}
+.vopros:hover {
+    background-color: #413d40;
+}
+.Zr3 {
+    color: #e9e9e9;
+    font-size: 30px;
+    font-weight: 633;
+    padding: 8px 20px;
+}
+.otvet {
+    background-color: #383437;
+    position: relative;
+    top: 68.30%;
+    left: 25%;
+    width: 800px;
+    height: 70px;
+    border-radius: 0px 0px 22px 22px;
+    max-height: 0; /* Скрываем ответ */
+    overflow: hidden; /* Скрываем содержимое за пределами контейнера */
+    transition: max-height 0.5s ease; /* Плавная анимация */
+}
+.otvet.open {
+    max-height: 70px;
+}
+.z3 {
+    color: #dedede;
+    font-size: 22px;
+    font-weight: 333;
+    padding: 0px 20px 7px 20px;
+
+}
+.vopros1 {
+    cursor: pointer;
+    background-color: #383437;
+    position: relative;
+    top: 69.50%;
+    left: 25%;
+    width: 800px;
+    height: 70px;
+    border-radius: 22px;
+}
+.vopros1:hover {
+    background-color: #413d40;
+}
+.otvet1 {
+    background-color: #383437;
+    position: relative;
+    top: 68.80%;
+    left: 25%;
+    width: 800px;
+    height: 70px;
+    border-radius: 0px 0px 22px 22px;
+    max-height: 0; /* Скрываем ответ */
+    overflow: hidden; /* Скрываем содержимое за пределами контейнера */
+    transition: max-height 0.5s ease; /* Плавная анимация */
+}
+.otvet1.open {
+    max-height: 70px;
+}
+.z4 {
+    color: #dedede;
+    font-size: 22px;
+    font-weight: 333;
+    padding: 0px 20px 7px 20px;
+}
+.vopros2 {
+    cursor: pointer;
+    background-color: #383437;
+    position: relative;
+    top: 70%;
+    left: 25%;
+    width: 800px;
+    height: 70px;
+    border-radius: 22px;
+}
+.vopros2:hover {
+    background-color: #413d40;
+}
+.otvet2 {
+    background-color: #383437;
+    position: relative;
+    top: 69.30%;
+    left: 25%;
+    width: 800px;
+    height: 70px;
+    border-radius: 0px 0px 22px 22px;
+    max-height: 0; /* Скрываем ответ */
+    overflow: hidden; /* Скрываем содержимое за пределами контейнера */
+    transition: max-height 0.5s ease; /* Плавная анимация */
+}
+.otvet2.open {
+    max-height: 70px;
+}
+.z5 {
+    color: #dedede;
+    font-size: 25px;
+    font-weight: 333;
+    padding: 7px 20px 7px 20px;
+}
+.vopros3 {
+    cursor: pointer;
+    background-color: #383437;
+    position: relative;
+    top: 70.50%;
+    left: 25%;
+    width: 800px;
+    height: 70px;
+    border-radius: 22px;
+}
+.vopros3:hover {
+    background-color: #413d40;
+}
+.otvet3 {
+    background-color: #383437;
+    position: relative;
+    top: 69.80%;
+    left: 25%;
+    width: 800px;
+    height: 70px;
+    border-radius: 0px 0px 22px 22px;
+    max-height: 0; /* Скрываем ответ */
+    overflow: hidden; /* Скрываем содержимое за пределами контейнера */
+    transition: max-height 0.5s ease; /* Плавная анимация */
+}
+.otvet3.open {
+    max-height: 70px;
+}
+.tect13 {
+    position: absolute;
+    top: 87%;
+    left: 10%;
+    z-index: 10000;
+}
+#t13 {
+    border-radius: 100%;
+}
+.info6 {
+    position: absolute;
+    top: 83%;
+    left: 33%;
+    width: 730px;
+    height: 200px;
+    background-color: #303030c2;
+    border-radius: 20px 20px 20px 0px;
+}
+@font-face {
+    font-family: maincraft;
+    src: url(fond/transfonter.org-20241012-191610/Minecraft.woff2);
+}
+.z6 {
+    color: #33f746;
+    font-size: 22px;
+    font-weight: 333;
+    padding: 15px 20px 7px 20px;
+    font-family: maincraft,Segoe UI Semibold;
+    word-spacing: 5px;
+}
+.span1 {
+    color: #ffffff;
+}
+.span2 {
+    color: #515151;
+}
+.Ds1 {
+    position: absolute;
+    top: 59%;
+    left: 75%;
+    width: 75px;
+}
+@keyframes shakeBottom {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    75% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+  
+.Ds1 {
+    animation: shakeBottom 0.5s ease-in-out;
+    animation-iteration-count: 1; /* Одна анимация за раз */
+    animation-delay: 5s; /* Задержка перед повторением */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; /* Сохранение конечного состояния анимации */
+}
+.theend {
+    position: absolute;
+    background-color: rgb(33, 30, 34);
+    width: 100%;
+    height: 80px;
+    top: 97.40%;
+}
+.Zr4 {
+    color: #585858;
+    font-size: 15px;
+    padding: 15px 10px 10px 40px;
+}
+.the1 {
+    position: absolute;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    left: 90%; 
+}
+.the2 {
+    position: absolute;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    left: 86%; 
+}
+.the3 {
+    position: absolute;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    left: 82%; 
+}
+.the4 {
+    position: absolute;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    left: 78%; 
+}
+.Zr5 {
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    color: #585858;
+    font-size: 25px;
+    padding: 15px 10px 10px 0px;
+    font-weight: 500;
+}
+@media (width: 2560px) {
+    .wave {
+        top: 135%;
+    }
+    .donat {
+        top: 700%;
+    }
+    .uinfo1, .uinfo3, .uinfo5i {
+        left: 1400px;
+    }
+    .info1, .info3, .info5i {
+        left: 18%;
+    }
+    .info2, .info4 {
+        left: 1280px;
+    }
+    .uinfo2, .uinfo4 {
+        left: 24%;
+    }
+    .info5 {
+        left: 37%;
+    }
+    .vopros, .vopros1, .vopros2, .vopros3, .otvet, .otvet1, .otvet2, .otvet3 {
+        left: 35%;
+    }
+    .tect13 {
+        left: 23%;
+    }
+}
+@media (width: 1920px) {
+    .uinfo1, .uinfo3, .uinfo5i {
+        left: 1100px;
+    }
+    .info1, .info3, .info5i {
+        left: 8%;
+    }
+    .info2, .info4 {
+        left: 980px;
+    }
+    .uinfo2, .uinfo4 {
+        left: 16%;
+    }
+    .info5 {
+        left: 32%;
+    }
+    .vopros, .vopros1, .vopros2, .vopros3, .otvet, .otvet1, .otvet2, .otvet3 {
+        left: 29%;
+    }
+    .tect13 {
+        left: 20%;
+    }
+}
+@media (max-width: 1200px) { 
+    .Zr1 {
+        font-size: 40px;
+    }
+    .z1 {
+        font-size: 20px;
+    }
+    .info1, .info3, .info2, .info4, .info5i {
+        width: 450px;
+    }
+    .uinfo1, .uinfo2, .uinfo3, .uinfo4, .uinfo5i {
+        width: 450px;
+    }
+    .uinfo1 {
+        top: 2%;
+    }
+    .info2 {
+        top: 14%;
+    }
+    .info3 {
+        top: 29%;
+    }
+    .info5i {
+        top: 52%;
+    }
+}
+@media (max-width: 970px) {
+    .h1 , h1 {
+        font-size: 50px;
+    }
+    .donat {
+        left: auto;
+    }
+}
+@media (max-width: 650px) {
+    .h1 , h1 {
+        font-size: 35px;
+    }
+    .donat {
+        left: 35%;
+    }
+}
+@media (max-width: 555px) {
+    .donat {
+        position: absolute;
+        top: 75%;
+        left: 32%;
+    }
+}
+
+@media  ( max-width: 1280px) {
+    .foncss {
+        top: 550px;
+    }
+    .wave {
+        top: 82% ;
+    }
+    .info1, .info3, .info5i {
+        margin: 0px 0px 0px 80px;
+    }
+    .uinfo1, .uinfo3, .uinfo5i {
+        left: 58%;
+        margin: 90px 0px 0px 0px;
+    }
+    .info2, .info4 {
+        left: 50%;
+        margin: 90px 0px 0px 0px;
+    }
+    .uinfo2, .uinfo4 {
+        left: 6%;
+        margin: 90px 0px 0px 0px;
+    }
+    .tect13 {
+        top: 87%;
+    }
+    .Zr5 {
+        left: 58%;
+    }
+}
+@media  ( max-width: 1054px) {
+    .donat {
+        left: auto;
+    }
+    .foncss {
+        top: 550px;
+        height: 3500px;
+    }
+    .Zr1 {
+        font-size: 30px;
+    }
+    .z1 {
+        font-size: 20px;
+    }
+    .info1, .info3 {
+        width: 460px;
+    }
+    .uinfo1, .uinfo3 {
+        left: 57%;
+        width: 410px;
+        margin: 40px 0px 0px 0px ;
+    }
+    .uinfo2, .uinfo4 {
+        width: 410px;
+    }
+    .uinfo2 {
+        top: 14%;
+    }
+    .info2, .info4 {
+        width: 460px;
+        margin: 0px 0px 0px 0px;
+    }
+    .info2 {
+        top: 15%;
+    }
+    .info3 {
+        top: 27%;
+    }
+    .uinfo3 {
+        top: 26%;
+    }
+    .info4 {
+        top: 38%;
+    }
+    .uinfo4 {
+        top: 35%;
+    }
+    .info5i {
+        top: 48%;
+    }
+    .uinfo5i {
+        top: 48%;
+    }
+    .info5 {
+        top: 62%;
+        left: 21%;
+    }
+    .vopros {
+        top: 68%;
+        left: 14%;
+    }
+    .otvet {
+        top: 67.30%;
+        left: 14%;
+    }
+    .vopros1 {
+        top: 69%;
+        left: 14%;
+    }
+    .otvet1 {
+        top: 68.30%;
+        left: 14%;
+    }
+    .vopros2 {
+        top: 70%;
+        left: 14%;
+    }
+    .otvet2 {
+        top: 69.30%;
+        left: 14%;
+    }
+    .vopros3 {
+        top: 71%;
+        left: 14%;
+    }
+    .otvet3 {
+        top: 70.30%;
+        left: 14%;
+    }
+    .info6 {
+        top: 82%;
+        left: 25%;
+    }
+    .tect13 {
+        top: 88%;
+        left: 5%;
+        width: 250px;
+    }
+    .the1 {
+        left: 75%;
+    }
+    .the2 {
+        left: 80%;
+    }
+    .the3 {
+        left: 85%;
+    }
+    .the4 {
+        left: 90%;
+    }
+    .Zr5 {
+        left: 50%;
+    }
+}
+@media ( min-width: 2560px) {
+    .foncss {
+        top: 900px;
+    }
+    .h1 , h1 {
+        font-size: 90px;
+    }
+    .ulogo, p  {
+        font-size: 30px;
+    }
+    .donat  {
+        left: auto;
+        width: 280px;
+        height: 60px;
+    }
+    .Zr6 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 824px) {
+    .h1 , h1 {
+        font-size: 40px;
+    }
+    .donat {
+        left:auto;
+        top: 500%;
+    }
+    .foncss {
+        height: 4500px;
+        overflow: hidden; 
+    }
+    .uinfo1, .uinfo2, .uinfo3, .uinfo4, .info2, .info4, .uinfo5i {
+        left: 0%;
+        margin: 0px 0px 0px 80px;
+    }
+    .info3 {
+        top: 27%;
+    }
+    .info4 {
+        top: 39%;
+    }
+    .uinfo1 {
+        top: 10%;
+    }
+    .uinfo2 {
+        top: 22%;
+    }
+    .uinfo3 {
+        top: 33%;
+    }
+    .uinfo4 {
+        top: 43%;
+    }
+    .info5i {
+        top: 50%;
+    }
+    .uinfo5i {
+        top: 59%;
+    }
+    .Zr2 {
+        font-size: 43px;
+    }
+    .info5 {
+        top: 68.50%;
+        left: 9.50%;
+    }
+    .vopros {
+        top: 73.50%;
+        width: 550px;
+        left: 9.50%;
+    }
+    .otvet {
+        top: 73.1%;
+        width: 550px;
+        left: 9.50%;
+    }
+    .vopros1 {
+        top: 73.99%;
+        width: 550px;
+        left: 9.50%;
+    }
+    .otvet1 {
+        top: 73.51%;
+        width: 550px;
+        left: 9.50%;
+    }
+    .vopros2 {
+        top: 74.50%;
+        width: 550px;
+        left: 9.50%;
+    }
+    .otvet2 {
+        top: 74.1%;
+        width: 550px;
+        left: 9.50%;
+    }
+    .z5 {
+        font-size: 23px;
+    }
+    .vopros3 {
+        top: 75%;
+        width: 550px;
+        left: 9.50%;
+    }
+    .otvet3 {
+        top: 74.55%;
+        width: 550px;
+        left: 9.50%;
+    }
+    .info6 {
+        top: 85%;
+        width: 450px;
+        height: 250px;
+    }
+    .z6 {
+        font-size: 18px;
+    }
+    .tect13 {
+        top: 90%;
+        z-index: 1000;
+    }
+    .theend {
+        top: 98.20%;
+    }
+    .Zr5 {
+        font-size: 18px;
+    }
+    .the1, .the2, .the3, .the4 {
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (max-width: 663px) {
+    .donat {
+        top: 600%;
+        left: auto;
+    }
+}
+@media (max-width: 480px) {
+    .foncss {
+        top: 550px;
+        height: 4500px;
+    }
+    .logo {
+        width: 30%;
+    }
+    .ulogo h1 {
+        font-size: 40px;
+        justify-content: center;
+    }
+    .donat {
+        top:630%;
+        left: auto;
+    }
+    .info1, .info3, .info2, .info4, .info5i{
+        width: 320px;
+        margin: 30px;
+    }
+    .uinfo1, .uinfo2, .uinfo3, .uinfo4 {
+        margin: 30px;
+        width: 350px;
+    }
+    .Zr1{
+        font-size: 35px;
+    }
+    .z1 {
+        font-size: 20px;
+    }
+    .uinfo1 {
+        top: 13%;
+    }
+    .uinfo2 {
+        top: 28%;
+    }
+    .info2 {
+        top: 18%;
+        width: 320px;
+    }
+    .info3 {
+        top: 33%;
+        width: 320px;
+    }
+    .uinfo3 {
+        top: 42%;
+    }
+    .info4 {
+        top: 47%;
+        width: 320px;
+    }
+    .uinfo4 {
+        top: 50.80%;
+    }
+    .info5i {
+        top: 56%;
+    }
+    .uinfo5i {
+        top: 68%;
+        width: 350px;
+        margin: 30px;
+    }
+    .info5 {
+        top: 76%;
+        left: 35px;
+    }
+    .Zr2 {
+        font-size: 25px;
+    }
+    .Zr3 {
+        font-size: 20px;
+    }
+    .z3 {
+        font-size: 12px;
+    }
+    .vopros {
+        top: 79%;
+        left: 40px;
+        width: 330px;
+        height: 60px;
+    }
+    .otvet {
+        top: 78.60%;
+        left: 40px;
+        width: 330px;
+        height: 50px;
+    }
+    .vopros1 {
+        top: 79.30%;
+        left: 40px;
+        width: 330px;
+        height: 60px;
+    }
+    .otvet1 {
+        top: 78.90%;
+        left: 40px;
+        width: 330px;
+        height: 50px;
+    }
+    .vopros2 {
+        top: 79.60%;
+        left: 40px;
+        width: 330px;
+        height: 60px;
+    }
+    .otvet2 {
+        top: 79.20%;
+        left: 40px;
+        width: 330px;
+        height: 50px;
+    }
+    .vopros3 {
+        top: 79.90%;
+        left: 40px;
+        width: 330px;
+        height: 60px;
+    }
+    .otvet3 {
+        top: 79.50%;
+        left: 40px;
+        width: 330px;
+        height: 50px;
+    }
+    .info6 {
+        top: 62%;
+        width: 320px;
+        height: 400px;
+        left: 30px;
+    }
+    .z6 {
+        font-size: 20px;
+    }
+    .Ds1 {
+        top: 77%;
+        left: 40%;
+    }
+    .info6 {
+        top: 87%;
+        left: 70px;
+    }
+    .tect13 {
+        top: 95%;
+        width: 100px;
+        z-index: 1000;
+        left: 20px;
+    }
+    .Zr4 {
+        font-size: 12px;
+    }
+    .Zr5 {
+        top: 40%;
+        left: 10%;
+    }
+    .the1 {
+        top: 50%;
+        left: 60%;
+    }
+    .the2 {
+        top: 50%;
+        left: 70%;
+    }
+    .the3 {
+        top: 50%;
+        left: 80%;
+    }
+    .the4 {
+        top: 50%;
+        left: 90%;
+    }
+}
+@media (max-width: 990px) {
+    .fab.fa-discord {  
+        position:absolute;
+        top: -250%;
+        transition-delay: 0.5s; /* Задержка перед появлением, соответствующая длительности анимации раскрытия */
+    }
+    .fab.fa-telegram-plane {  
+        position:absolute;
+        top: -190%;
+    }
+    .fab.fa-youtube {  
+        position:absolute;
+        top: -130%;
+    }
+    .fab.fa-tiktok {  
+        position:absolute;
+        top: -70%;
+    }
+
+}

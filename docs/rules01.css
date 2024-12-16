@@ -1,0 +1,408 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Чтобы навбар занимал всю ширину */
+    z-index: 1000; /* Чтобы он всегда был поверх других элементов */
+    border: 3px solid #201c20fa; /* Цвет и толщина обводки */ 
+}
+.nav_1 {
+    position: fixed;
+    left: 6%;
+    top: 40%;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(225, 228, 231);   
+}
+.nav_2, .nav_3, .nav_4, .nav_5, .nav_6 {
+    position: fixed;
+    left: 6%;
+    font-weight: 450;
+    color: rgb(225, 228, 231);   
+    display: block;
+    font-size: 17px;
+    width: 225px;
+    height: 40px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+    padding: 5px 0px 0px 5px ;
+}
+.nav_2:hover, .nav_3:hover, .nav_4:hover, .nav_5:hover, .nav_6:hover {
+    background-color: rgb(33, 30, 35);
+}
+.nav_2{
+    top: 45%;
+}
+.nav_4 {
+    top: 55%;
+}
+.nav_3 {
+    top: 50%;
+}
+.nav_5 {
+    top: 60%;
+    height: 58px;
+}
+.nav_6 {
+    top: 68%;
+}
+.list {
+    position: fixed;
+    left: 5%;
+    line-height: 6px;
+}
+.navbar-nav .nav-link:hover {
+    color: rgb(178, 110, 242);
+}
+.container1 {
+    background-color: rgb(20, 18, 21);
+    width: auto;
+    height: 6800px;
+}
+.container2 {
+    background-color: rgb(20, 18, 21);
+    width: auto;
+    height: 1800px;
+}
+.list1, .list2 {
+    color: rgb(225, 228, 231);   
+    display: block;
+    font-weight: 500;
+    font-size: 19px;
+    width: 230px;
+    height: 40px;
+    padding: 15px 0px 0px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+.list2 {
+    white-space: 20px;
+    line-height: 20px;
+    height: 65px;
+    padding: 10px 0px 0px 10px;
+}
+.list1:hover, .list2:hover {
+    background-color: rgb(33, 30, 35);
+}
+.list .list1.active {
+    color: blueviolet;
+}
+.list .list2.active {
+    color: blueviolet;
+}
+.rule0 {
+    font-size: 48px;
+    color: white;
+    font-weight: 620;
+    position: relative;
+}
+.span1 {
+    padding: 3px 8px;
+    background-color: #2F2F33;
+    border: 1px solid #3d3d41;
+    border-radius: 7px;
+    font-family: 'Inter', sans-serif;
+}
+.rule1, .rule5, .rule10, .rule11, .rule12 {
+    left: 3%;
+    font-size: 30px;
+    color: rgb(237, 237, 237);
+    font-weight: 620;
+    position: relative;
+    padding: 30px 0px 0px 0px;
+}
+.rule2, .rule3, .rule4, .rule6, .rule7, .rule8, .rule9 {
+    font-size: 19px;
+    color: rgb(216, 216, 216);
+    font-weight: 470;
+    left: 7%;
+    position: relative;
+    padding: 20px 0px 0px 0px;
+    width: 830px;
+}
+.rule_P {
+    position: relative;
+    left: 10%;
+    margin-top: -25px
+}
+.mod1 {
+    left: 15%;
+    font-size: 38px;
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+.mod2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: red;
+    position: relative;
+    left: 7%;
+    padding: 20px 0px 0px 0px;
+}
+.mod3 {
+    position: relative;
+    left: 10%;
+    width: 1000px;
+    font-size: 20px;
+    font-weight: 450;
+    color: rgb(228, 228, 228);
+}
+.mod4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(0, 255, 0);
+    position: relative;
+    left: 7%;
+    padding: 20px 0px 0px 0px;
+}
+.mod5 {
+    position: relative;
+    left: 10%;
+    width: 1000px;
+    font-size: 20px;
+    font-weight: 450;
+    color: rgb(228, 228, 228);
+    padding: 30px 0px 0px 0px;
+}
+.i_i {
+    color: rgb(172, 172, 172);
+}
+.i_01 {
+    padding: 20px 0px 0px 0px;
+}
+.theend11_ {
+    position: relative;
+    background-color: rgb(33, 30, 34);
+    width: 100%;
+    height: 80px;
+    top: 360%;
+}
+.theend11 {
+    position: relative;
+    background-color: rgb(33, 30, 34);
+    width: 100%;
+    height: 80px;
+    top: 180%;
+}
+.Zr41 {
+    color: #424242;
+    font-size: 15px;
+    padding: 15px 10px 10px 40px;
+}
+.the11 {
+    position: absolute;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    left: 90%; 
+}
+.the21 {
+    position: absolute;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    left: 86%; 
+}
+.the31 {
+    position: absolute;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    left: 82%; 
+}
+.the41 {
+    position: absolute;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    left: 78%; 
+}
+.Zr51 {
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    color: #585858;
+    font-size: 25px;
+    padding: 15px 10px 10px 0px;
+    font-weight: 500;
+}
+@media (min-width: 2560px) {
+    .container1 {
+        height: 11700px;
+    }
+    .container2 {
+        height: 1900px;
+    }
+    .theend11_ {
+        top: 280%;
+    }
+}
+@media (max-width: 2559px) {
+    .theend11_ {
+        top: 160%;
+    }
+    .theend11 {
+        top: 110%;
+    }
+}
+@media (width: 1920px) {
+    .container1 {
+        height: 6850px;
+    }
+    .theend11 {
+        top: 61%;
+    }
+    .theend11_ {
+        top: 200%;
+    }
+}
+@media (width: 1440px) {
+    .theend11_ {
+        top: 150%;
+    }
+}
+@media (max-width: 1300px) {
+    .list {
+        display: none;
+    }
+    .navig {
+        display: none;
+    }
+}
+@media (max-width: 1000px)  {
+    .rule0 {
+        font-size: 38px;
+        color: white;
+        font-weight: 620;
+        position: relative;
+    }
+    .rule1, .rule5, .rule10, .rule11, .rule12 {
+        left: 3%;
+        font-size: 20px;
+        color: rgb(237, 237, 237);
+        font-weight: 620;
+        position: relative;
+        padding: 30px 0px 0px 0px;
+    }
+    .rule2, .rule3, .rule4, .rule6, .rule7, .rule8, .rule9 {
+        font-size: 10px;
+        color: rgb(216, 216, 216);
+        font-weight: 470;
+        left: 7%;
+        position: relative;
+        padding: 20px 0px 0px 0px;
+        width: 530px;
+    }
+    .container1 {
+        background-color: rgb(20, 18, 21);
+        width: auto;
+        height: 7150px;
+    }
+    .Zr51, .the11, .the21, .the31, .the41 {
+        display: none;
+    }
+    .theend11 {
+        top: 70%;
+    }
+}
+@media (max-height: 710px) {
+    .theend11_ {
+        top:360%;
+    }
+    .theend11 {
+        top:260%;
+    }
+}
+@media (max-width: 431px) {
+    .rule_P {
+        font-size: 16px;
+    }
+    .span1 {
+        left: 15%;
+    }
+    .rule0 {
+        font-size: 35px;
+        color: white;
+        font-weight: 620;
+        position: relative;
+    }
+    .rule1, .rule5, .rule10, .rule11, .rule12 {
+        font-size: 20px;
+        color: rgb(237, 237, 237);
+        font-weight: 620;
+        position: relative;
+        padding: 30px 0px 0px 0px;
+    }
+    .rule2, .rule3, .rule4, .rule6, .rule7, .rule8, .rule9 {
+        font-size: 10px;
+        left: 1%;
+        color: rgb(216, 216, 216);
+        font-weight: 470;
+        position: relative;
+        padding: 20px 0px 0px 0px;
+        width: 300px;
+    }
+    .container1 {
+        background-color: rgb(20, 18, 21);
+        width: auto;
+        height: 8650px;
+    }
+    .Zr51, .the11, .the21, .the31, .the41 {
+        display: none;
+    }
+    .theend11_ {
+        position: relative;
+        background-color: rgb(33, 30, 34);
+        width: 100%;
+        height: 80px;
+        top: 370%;
+    }
+}
+@media (max-width: 1000px) {
+    .container2 {
+        background-color: rgb(20, 18, 21);
+        width: auto;
+        height: 1900px;
+    }
+    .mod1 {
+        width: 550px;
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+        position: relative;
+    }
+    .mod2 {
+        left: -5%;
+        font-size: 25px;
+        font-weight: 600;
+        color: red;
+        position: relative;
+        padding: 20px 0px 0px 0px;
+    }
+    .mod3 {
+        left: -5%;
+        position: relative;
+        width: 700px;
+        font-size: 20px;
+        font-weight: 450;
+        color: rgb(228, 228, 228);
+    }
+    .mod4 {
+        left: -5%;
+        font-size: 25px;
+        font-weight: 600;
+        color: rgb(0, 255, 0);
+        position: relative;
+        padding: 20px 0px 0px 0px;
+    }
+    .mod5 {
+        left: -5%;
+        position: relative;
+        width: 700px;
+        font-size: 20px;
+        font-weight: 450;
+        color: rgb(228, 228, 228);
+        padding: 30px 0px 0px 0px;
+    }
+}

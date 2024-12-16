@@ -1,0 +1,17 @@
+.container3 {
+    background-color: rgb(20, 18, 21);
+    width: auto;
+    height: 1000px;
+}
+.theend1_2 {
+    position: relative;
+    background-color: rgb(33, 30, 34);
+    width: 100%;
+    height: 80px;
+    top: 46%;
+}
+@media (min-width: 2560px) {
+    .theend1_2 {
+        top: 46%;
+    }
+}
